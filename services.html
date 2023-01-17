@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title>
+            Welcome
+        </title>
+        <style>
+            body{
+                margin: 0;
+                padding: 0;
+                background: #100b0bde;
+            }
+            .navbar{
+                background: #222;
+            }
+            .navbar li{
+                list-style: none;
+                display: inline-flex;
+                padding: 20px;
+                padding-bottom: 26px;
+            }
+            .navbar li a{
+                text-decoration: none;
+                font-family:Verdana, Geneva, Tahoma, sans-serif;
+                color: #fff;
+                position: relative;
+            }
+            .navbar li a::after{
+                content: "";
+                padding: 10px;
+                width: 100%;
+                height: 3px;
+                color: #55d6aa;
+                position: absolute;
+                left: 0;
+                bottom: -10px;
+            }
+            .navbar li a:hover{
+                color: #55d6aa;
+                transform: translateX(10px);
+                transition: ease-in-out 0.2s;
+            }
+            .navbar li .active{
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="navbar">
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contacts</a></li>
+            <li class="active"><a href="webpage.html" >Home</a></li>
+            <li><a href="#">Contribute</a></li>
+            <li><a href="#">About</a></li>     
+        </div>
+    </body>
+</html>
